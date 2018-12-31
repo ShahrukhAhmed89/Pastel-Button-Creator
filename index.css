@@ -248,3 +248,9 @@ h3{
 {
   opacity: 0
 }
+
+@media(max-width:768px){
+    .editor-wrapper, .display-wrapper{
+        width: 100%;
+    }
+}
