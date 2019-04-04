@@ -1,0 +1,250 @@
+*{
+	box-sizing: border-box;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: #575A57;
+	transition:all 0.2s ease;
+	background-color: #fafafa;
+}
+a{
+	color:inherit;
+	text-decoration: none;
+}
+ul, li{
+	list-style-type:none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3{
+	margin: 0;		
+}
+h1{
+	text-align: center;
+	font-size: 1.2rem;
+	padding:1rem;
+}
+h2{
+	font-size:.95rem;
+	font-weight: 600;
+}
+h3{
+	font-size:.9rem;
+	font-weight: 500;
+	padding-left: 1rem;
+}
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	padding:0rem 1rem;
+}
+.editor-wrapper{
+    width: 40%;
+    overflow-y: auto;
+    background: white;
+    padding: 1rem;
+	box-shadow: 2px 2px 6px 0px #d9d9d9;
+}
+.editor-wrapper > *{
+	padding:1rem;
+}
+.editor > *{
+	padding:0.5rem;
+}
+.editor-sections{
+	margin-bottom: 2rem;
+}
+.editor-sections .form-container{
+	margin: 1rem 0;
+}
+.display-wrapper{
+	width:60%;
+	background-color: #24242a
+}
+
+.display_button{
+	text-align: center;
+
+}
+#button_design{
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 0;
+    padding: 16px 32px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.display_code{
+	border-top: 2px solid #fafafa;
+	width: 100%;
+	margin: auto;
+	margin-top:3rem;
+	min-height: 400px;
+	padding:1rem;
+	position: relative;
+}
+.code_button-wrapper{
+	text-align:right;
+	position: absolute;
+    left: 0;
+    right: 10px;
+    top: 10px;
+}
+.code_copyButton, .code_copied{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	background: #e3e3e3;
+    color: #3a3955;
+	padding:8px 16px;
+	border-radius: 5px;
+	border:unset;
+	cursor: pointer;
+	position: relative;
+}
+.code_copied{
+	background: #a9edb7;
+}
+
+/* .code_copyButton:before{
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top:0;
+	left:-30%;
+	content: "Copied!";
+	padding:8px 16px;
+	background:rgb(175, 245, 163);
+	border-radius: 5px;
+	transition:all 0.5s ease;
+} */
+.code_css{
+    width: 100%;
+    color: #cbc8d0;
+    background: #24242a;
+}
+.code_css > *{
+	padding-bottom: 0.5rem;
+}
+.editor-options{
+	padding-top:
+}
+
+.sm-form-container{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.form-item{
+    align-self: flex-end;
+    width: 15%;
+}
+.sm-form-container label {
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    padding-bottom: 0.4rem;
+}
+.sm-form-container  input[type="number"] {
+    width: 100%;
+    padding: 0.3rem 0 .3rem .4rem;
+    display: block;
+    border: none;
+    background: #e6f8ff;
+}
+.slider-label{
+    font-size:  .75rem;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.color-slider{
+    background: linear-gradient(to left, #ff0000 0%, #FF0 16.66%, #0F0 33.33%, #0FF 50%, #00F 66.66%, #F0F 83.33%, #F00 100%);
+}
+.sautration-slider{
+    background: linear-gradient(to right, black, white);
+}
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+ .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    border: 0;
+    margin: .5rem .5rem 0 0;
+    padding: .5rem;
+    background: #e6f8ff;
+    cursor: pointer;
+
+ }
+ .btn{
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ .btn-darken:hover{
+    /* background: #81cce9; */
+    filter: brightness(80%);
+
+ }
+.btn-float:hover{
+    transform:translateY(-5px);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-shadow:hover{
+    box-shadow: 0 6px 10px 0px #d2d2d2 !important;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-float-shadow:hover{
+    transform:translateY(-5px) !important;
+    box-shadow: 0 6px 10px 0px #d2d2d2 !important;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active in <2.1.8 */
+
+{
+  opacity: 0
+}
